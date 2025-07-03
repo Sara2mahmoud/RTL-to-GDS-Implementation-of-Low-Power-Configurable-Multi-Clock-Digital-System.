@@ -1,110 +1,92 @@
 
-# RTL-to-GDS Implementation of Low Power Configurable Multi-Clock Digital System
+# RTL-to-GDSII Implementation of a Low-Power Configurable Multi-Clock Digital System
 
-This project implements a complete digital system using Verilog HDL that supports multiple clock domains and power-saving mechanisms. The design is fully verified and follows the ASIC flow from RTL to synthesis, timing analysis, and layout generation (GDSII).
-
-<p align="center">
-  <img src="docs/final_system_block_diagram.png" alt="System Block Diagram" width="700"/>
-</p>
-
-## 🔍 Overview
-
-The system is designed to demonstrate how low-power design and multi-clock domain support can be integrated into a complete digital datapath that communicates over UART. The block diagram above illustrates the core modules and their interconnections.
-
-### 🎯 Key Features
-
-- Multiple independent clock domains: REF_CLK, UART_CLK, TX_CLK, RX_CLK
-- Low power design using clock gating
-- Reset synchronization across domains
-- Fully decoupled transmit/receive via Async FIFO
-- Complete ALU and register file integration
-- UART-based communication with external testbench
+This project implements a digital system from **RTL to GDSII** using a full **ASIC design flow**. The design includes multiple clock domains, low-power techniques like clock gating, and formal verification.
 
 ---
 
-## 🧱 Top-Level Modules
+## 🛠️ Project Overview
 
-| Module        | Description |
-|---------------|-------------|
-| SYS_CTRL      | Controls operation, communication, and data flow across the system |
-| RegFile       | Register file to hold operands and results |
-| ALU           | Arithmetic and logic operations |
-| ASYNC FIFO    | Asynchronous FIFO for clock domain crossing |
-| Clock Dividers| Independent dividers for TX and RX paths |
-| UART          | Serial communication interface |
-| Reset Syncs   | Domain-specific reset synchronization modules |
-| Clock Gating  | Power optimization via gating unused clocks |
+This design interfaces via **UART** to receive commands that either:
+- Access a register file
+- Execute ALU operations
+
+It uses multiple clock domains to optimize performance and power, and transmits results (with CRC protection) via FIFO and UART TX.
 
 ---
 
-## 🛠️ Technologies Used
+## 📂 RTL Folder Structure
 
-- Verilog HDL (RTL design)
-- Synthesis-ready and FPGA-validatable
-- Clock gating and reset synchronization techniques
-- Designed for implementation from RTL to GDSII in ASIC flow
+The `RTL/` directory contains module-specific subdirectories:
 
----
-
-## 📂 File Structure
-
-```
-├── rtl/                # Verilog source files
-├── synthesis/          # Synthesis scripts and reports
-├── reports/            # Power, timing, and area reports
-├── docs/               # Project documentation and diagrams
-├── testbench/          # Verification files
-└── README.md
-```
+- **ALU/** – Arithmetic & logic operations (add, sub, AND, OR, shift)
+- **RegFile/** – Register file for operand storage and access
+- **UART/** – UART TX and RX logic
+- **Clock_Divider/** – Generates additional clocks from a master source
+- **Clock_Gating/** – Dynamically disables clocks to save power
+- **BIT_SYNC/** / **DATA_SYNC/** / **RST_SYNC/** – Synchronizers for safe signal transfer between clock domains
+- **SYS_CTRL/** – FSM control unit for system coordination
+- **Top/** – Top-level module that integrates all blocks
 
 ---
 
-## 📊 Results Summary
+## 🧪 Testbench (`TB/`)
 
-| Metric         | Value         |
-|----------------|---------------|
-| Max Freq       | xxx MHz       |
-| Area           | xx,xxx µm²    |
-| Dynamic Power  | x.xx mW       |
-| Static Power   | x.xx µW       |
-| Hold Violations| 0             |
+Contains simulation testbenches written in Verilog to verify:
+- UART communication
+- Clock-domain behavior
+- ALU and register functionality
 
 ---
 
-## 📤 How to Run
+## 🗄️ Backend (`Backend/`)
 
-1. Clone this repo:
+ASIC implementation files including:
+- **synthesis/** – Synthesis TCL scripts
+- **DFT/** – DFT (Scan insertion) files
+- **formality/** – Setup for RTL vs Gate-Level formal verification
+
+---
+
+## 🖼️ System Diagram
+
+![System Diagram](docs/system_diagram.png)
+
+---
+
+## ▶️ Simulation Instructions
+
+To run the RTL simulation:
+
+1. Clone the project:
    ```bash
    git clone https://github.com/Sara2mahmoud/RTL-to-GDS-Implementation-of-Low-Power-Configurable-Multi-Clock-Digital-System.git
    cd RTL-to-GDS-Implementation-of-Low-Power-Configurable-Multi-Clock-Digital-System
    ```
 
-2. Run synthesis scripts:
-   ```bash
-   cd synthesis
-   source run_dc.tcl
+2. Open **ModelSim** or **QuestaSim** GUI.
+
+3. Load the project directory, then run:
+   ```tcl
+   do run.do
    ```
 
-3. Simulate and verify:
-   ```bash
-   cd testbench
-   # Run your simulator with testbench files
-   ```
-
-4. Analyze power and timing:
-   ```bash
-   cd reports
-   # View area, power, and STA results
-   ```
+This will compile and simulate the RTL design with waveform viewing enabled.
 
 ---
 
-## 👩‍💻 Author
+## 📚 Documentation
 
-- Sara Mahmoud — [GitHub](https://github.com/Sara2mahmoud)
+- Additional descriptions and detailed component explanations are available in the `DOCs/` directory.
 
 ---
 
-## 📜 License
+## 📄 LICENSE
 
-This project is provided for educational purposes and non-commercial use.
+_(Specify license here, e.g., MIT, Apache 2.0, etc.)_
+
+---
+
+## 🙏 Acknowledgements
+
+Thanks to all contributors and support resources used throughout this RTL-to-GDSII implementation process.
