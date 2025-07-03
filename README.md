@@ -45,7 +45,8 @@ ASIC implementation files including:
 - **synthesis/** – Synthesis TCL scripts
 - **DFT/** – DFT (Scan insertion) files
 - **formality/** – Setup for RTL vs Gate-Level formal verification
-
+- **post_dft_formality/** – Gate-level vs RTL verification post-synthesis.
+- **post_synthesis_formality/** – Formality verification after DFT insertion.
 ---
 
 ## 🖼️ System Diagram
