@@ -50,7 +50,7 @@ ASIC implementation files including:
 
 ## 🖼️ System Diagram
 
-![System Diagram](docs/system_diagram.png)
+<img src="docs/final_system_block_diagram.png" alt="Block Diagram" width="700"/>
 
 ---
 
