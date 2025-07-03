@@ -1,0 +1,66 @@
+module UART_TOP
+  #( parameter DATA_WIDTH=8
+  )
+  ( input wire PAR_EN,
+    input wire [DATA_WIDTH-1:0] P_DATA,
+    input wire DATA_VALID,
+    input wire PAR_TYP,
+    input wire CLK,
+    input wire RST,
+    output wire TX_OUT,
+    output wire BUSY
+    );
+    wire ser_done;
+    wire ser_en;
+    wire par_bit;
+    wire ser_data;
+    wire [1:0] mux_sel;
+   
+ UART_TX  uart(
+.DATA_VALID(DATA_VALID),
+.PAR_EN(PAR_EN),
+.ser_done(ser_done),
+.ser_en(ser_en),
+.BUSY(BUSY),
+.mux_sel(mux_sel),
+.CLK(CLK),
+.RST(RST)
+);
+
+serializer #(
+  .IN_WIDTH(DATA_WIDTH)
+)ser(
+.CLK(CLK),
+.RST(RST),
+.P_DATA(P_DATA),
+.DATA_VALID(DATA_VALID),
+.ser_en(ser_en),
+.ser_done(ser_done),
+.BUSY(BUSY),
+.ser_data(ser_data)
+);
+
+parity_calc  #(
+  .IN_WIDTH(DATA_WIDTH)
+)parity( 
+.P_DATA(P_DATA),
+.DATA_VALID(DATA_VALID),  
+.CLK(CLK),
+.RST(RST),
+.PAR_TYP(PAR_TYP),
+.par_bit(par_bit),
+.BUSY(BUSY)
+);
+
+MUX mux (
+//.CLK(CLK),
+//.RST(RST),
+.TX_OUT(TX_OUT),
+.mux_sel(mux_sel),
+.par_bit(par_bit),
+.ser_data(ser_data)
+);
+
+
+
+endmodule

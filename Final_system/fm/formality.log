@@ -1,0 +1,22 @@
+Info:  Net Ref:/WORK/FIFO_TOP/wclken is undriven.
+Info:  Net Imp:/WORK/ALU_OPER_WIDTH8_OUT_WIDTH16_DW_div_uns_0/remainder[7] is undriven.
+Info:  Net Imp:/WORK/ALU_OPER_WIDTH8_OUT_WIDTH16_DW_div_uns_0/remainder[6] is undriven.
+Info:  Net Imp:/WORK/ALU_OPER_WIDTH8_OUT_WIDTH16_DW_div_uns_0/remainder[5] is undriven.
+Info:  Net Imp:/WORK/ALU_OPER_WIDTH8_OUT_WIDTH16_DW_div_uns_0/remainder[4] is undriven.
+Info:  Net Imp:/WORK/ALU_OPER_WIDTH8_OUT_WIDTH16_DW_div_uns_0/remainder[3] is undriven.
+Info:  Net Imp:/WORK/ALU_OPER_WIDTH8_OUT_WIDTH16_DW_div_uns_0/remainder[2] is undriven.
+Info:  Net Imp:/WORK/ALU_OPER_WIDTH8_OUT_WIDTH16_DW_div_uns_0/remainder[1] is undriven.
+Info:  Net Imp:/WORK/ALU_OPER_WIDTH8_OUT_WIDTH16_DW_div_uns_0/remainder[0] is undriven.
+Info:  Net Imp:/WORK/ALU_OPER_WIDTH8_OUT_WIDTH16_DW_div_uns_0/divide_by_0 is undriven.
+Info:  Net Imp:/WORK/ALU_OPER_WIDTH8_OUT_WIDTH16_DW01_sub_0/CO is undriven.
+Info:  Net Imp:/WORK/ALU_OPER_WIDTH8_OUT_WIDTH16_DW01_add_0/CO is undriven.
+Info:  Net Imp:/WORK/ALU_OPER_WIDTH8_OUT_WIDTH16_DW01_add_1/CO is undriven.
+Info:  guide_uniquify 103 (Line: 726)  Cannot find object "U1_ClkDiv/U12" in design 'SYS_TOP'.
+Info:  SVF Operation 103 (Line: 726) - uniquify.  Status: rejected
+Info:  guide_uniquify 103 (Line: 726)  Cannot find object "U0_ClkDiv/U12" in design 'SYS_TOP'.
+Info:  guide_uniquify 113 (Line: 788)  Cannot find object "ALU_U0/dp_cluster_0/mult_49" in design 'SYS_TOP'.
+Info:  SVF Operation 113 (Line: 788) - uniquify.  Status: rejected
+Info:  guide_uniquify 114 (Line: 792)  Cannot find object "UART_RX_TX_TOP_U0/UART_TOP_RX_UO/edge_bit_count_U0/dp_cluster_0/mult_add_19_aco" in design 'SYS_TOP'.
+Info:  Pre-verification of Ref:/WORK/ALU_OPER_WIDTH8_OUT_WIDTH16/div_52 SUCCEEDED.
+Info:  Pre-verification of Ref:/WORK/ALU_OPER_WIDTH8_OUT_WIDTH16/mult_49 SUCCEEDED.
+Info:  Pre-verification of Ref:/WORK/edge_bit_count/mult_add_19_aco SUCCEEDED.
