@@ -47,6 +47,7 @@ ASIC implementation files including:
 - **formality/** – Setup for RTL vs Gate-Level formal verification
 - **post_dft_formality/** – Gate-level vs RTL verification post-synthesis.
 - **post_synthesis_formality/** – Formality verification after DFT insertion.
+- **pnr/** – Physical implementation (Place and Route), including floorplanning, placement, CTS, routing, and GDSII generation
 ---
 
 ## 🖼️ System Diagram
