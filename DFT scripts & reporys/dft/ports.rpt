@@ -1,0 +1,247 @@
+ 
+****************************************
+Report : Attribute
+Design : SYS_TOP
+Version: K-2015.06
+Date   : Sat Aug 17 21:32:35 2024
+****************************************
+
+Design          Object             Type      Attribute Name            Value
+--------------------------------------------------------------------------------
+SYS_TOP         REF_CLK            port      pin_on_clock_network_per_scn
+                                                                       true
+SYS_TOP         RX_IN              port      driving_cell_max_rise_itrans_fall
+                                                                       0.000000
+SYS_TOP         RX_IN              port      driving_cell_max_rise_itrans_rise
+                                                                       0.000000
+SYS_TOP         RX_IN              port      driving_cell_pin_rise     Y
+SYS_TOP         RX_IN              port      driving_cell_library_rise scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+SYS_TOP         RX_IN              port      driving_cell_rise         BUFX2M
+SYS_TOP         RX_IN              port      driving_cell_max_fall_itrans_fall
+                                                                       0.000000
+SYS_TOP         RX_IN              port      driving_cell_max_fall_itrans_rise
+                                                                       0.000000
+SYS_TOP         RX_IN              port      driving_cell_multiplier   1.000000
+SYS_TOP         RX_IN              port      driving_cell_dont_scale   false
+SYS_TOP         RX_IN              port      driving_cell_no_drc       false
+SYS_TOP         RX_IN              port      driving_cell_pin_fall     Y
+SYS_TOP         RX_IN              port      driving_cell_library_fall scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+SYS_TOP         RX_IN              port      driving_cell_fall         BUFX2M
+SYS_TOP         SE[0]              port      set_dft_signal            2
+SYS_TOP         SE[0]              port      driving_cell_max_rise_itrans_fall
+                                                                       0.000000
+SYS_TOP         SE[0]              port      driving_cell_max_rise_itrans_rise
+                                                                       0.000000
+SYS_TOP         SE[0]              port      driving_cell_pin_rise     Y
+SYS_TOP         SE[0]              port      driving_cell_library_rise scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+SYS_TOP         SE[0]              port      driving_cell_rise         BUFX2M
+SYS_TOP         SE[0]              port      driving_cell_max_fall_itrans_fall
+                                                                       0.000000
+SYS_TOP         SE[0]              port      driving_cell_max_fall_itrans_rise
+                                                                       0.000000
+SYS_TOP         SE[0]              port      driving_cell_multiplier   1.000000
+SYS_TOP         SE[0]              port      driving_cell_dont_scale   false
+SYS_TOP         SE[0]              port      driving_cell_no_drc       false
+SYS_TOP         SE[0]              port      driving_cell_pin_fall     Y
+SYS_TOP         SE[0]              port      driving_cell_library_fall scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+SYS_TOP         SE[0]              port      driving_cell_fall         BUFX2M
+SYS_TOP         SE[1]              port      set_dft_signal            2
+SYS_TOP         SE[1]              port      driving_cell_max_rise_itrans_fall
+                                                                       0.000000
+SYS_TOP         SE[1]              port      driving_cell_max_rise_itrans_rise
+                                                                       0.000000
+SYS_TOP         SE[1]              port      driving_cell_pin_rise     Y
+SYS_TOP         SE[1]              port      driving_cell_library_rise scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+SYS_TOP         SE[1]              port      driving_cell_rise         BUFX2M
+SYS_TOP         SE[1]              port      driving_cell_max_fall_itrans_fall
+                                                                       0.000000
+SYS_TOP         SE[1]              port      driving_cell_max_fall_itrans_rise
+                                                                       0.000000
+SYS_TOP         SE[1]              port      driving_cell_multiplier   1.000000
+SYS_TOP         SE[1]              port      driving_cell_dont_scale   false
+SYS_TOP         SE[1]              port      driving_cell_no_drc       false
+SYS_TOP         SE[1]              port      driving_cell_pin_fall     Y
+SYS_TOP         SE[1]              port      driving_cell_library_fall scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+SYS_TOP         SE[1]              port      driving_cell_fall         BUFX2M
+SYS_TOP         SE[2]              port      set_dft_signal            2
+SYS_TOP         SE[2]              port      driving_cell_max_rise_itrans_fall
+                                                                       0.000000
+SYS_TOP         SE[2]              port      driving_cell_max_rise_itrans_rise
+                                                                       0.000000
+SYS_TOP         SE[2]              port      driving_cell_pin_rise     Y
+SYS_TOP         SE[2]              port      driving_cell_library_rise scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+SYS_TOP         SE[2]              port      driving_cell_rise         BUFX2M
+SYS_TOP         SE[2]              port      driving_cell_max_fall_itrans_fall
+                                                                       0.000000
+SYS_TOP         SE[2]              port      driving_cell_max_fall_itrans_rise
+                                                                       0.000000
+SYS_TOP         SE[2]              port      driving_cell_multiplier   1.000000
+SYS_TOP         SE[2]              port      driving_cell_dont_scale   false
+SYS_TOP         SE[2]              port      driving_cell_no_drc       false
+SYS_TOP         SE[2]              port      driving_cell_pin_fall     Y
+SYS_TOP         SE[2]              port      driving_cell_library_fall scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+SYS_TOP         SE[2]              port      driving_cell_fall         BUFX2M
+SYS_TOP         SE[3]              port      set_dft_signal            2
+SYS_TOP         SE[3]              port      driving_cell_max_rise_itrans_fall
+                                                                       0.000000
+SYS_TOP         SE[3]              port      driving_cell_max_rise_itrans_rise
+                                                                       0.000000
+SYS_TOP         SE[3]              port      driving_cell_pin_rise     Y
+SYS_TOP         SE[3]              port      driving_cell_library_rise scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+SYS_TOP         SE[3]              port      driving_cell_rise         BUFX2M
+SYS_TOP         SE[3]              port      driving_cell_max_fall_itrans_fall
+                                                                       0.000000
+SYS_TOP         SE[3]              port      driving_cell_max_fall_itrans_rise
+                                                                       0.000000
+SYS_TOP         SE[3]              port      driving_cell_multiplier   1.000000
+SYS_TOP         SE[3]              port      driving_cell_dont_scale   false
+SYS_TOP         SE[3]              port      driving_cell_no_drc       false
+SYS_TOP         SE[3]              port      driving_cell_pin_fall     Y
+SYS_TOP         SE[3]              port      driving_cell_library_fall scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+SYS_TOP         SE[3]              port      driving_cell_fall         BUFX2M
+SYS_TOP         SE[4]              port      set_dft_signal            2
+SYS_TOP         SE[4]              port      driving_cell_max_rise_itrans_fall
+                                                                       0.000000
+SYS_TOP         SE[4]              port      driving_cell_max_rise_itrans_rise
+                                                                       0.000000
+SYS_TOP         SE[4]              port      driving_cell_pin_rise     Y
+SYS_TOP         SE[4]              port      driving_cell_library_rise scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+SYS_TOP         SE[4]              port      driving_cell_rise         BUFX2M
+SYS_TOP         SE[4]              port      driving_cell_max_fall_itrans_fall
+                                                                       0.000000
+SYS_TOP         SE[4]              port      driving_cell_max_fall_itrans_rise
+                                                                       0.000000
+SYS_TOP         SE[4]              port      driving_cell_multiplier   1.000000
+SYS_TOP         SE[4]              port      driving_cell_dont_scale   false
+SYS_TOP         SE[4]              port      driving_cell_no_drc       false
+SYS_TOP         SE[4]              port      driving_cell_pin_fall     Y
+SYS_TOP         SE[4]              port      driving_cell_library_fall scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+SYS_TOP         SE[4]              port      driving_cell_fall         BUFX2M
+SYS_TOP         SI[0]              port      set_dft_signal            2
+SYS_TOP         SI[0]              port      driving_cell_max_rise_itrans_fall
+                                                                       0.000000
+SYS_TOP         SI[0]              port      driving_cell_max_rise_itrans_rise
+                                                                       0.000000
+SYS_TOP         SI[0]              port      driving_cell_pin_rise     Y
+SYS_TOP         SI[0]              port      driving_cell_library_rise scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+SYS_TOP         SI[0]              port      driving_cell_rise         BUFX2M
+SYS_TOP         SI[0]              port      driving_cell_max_fall_itrans_fall
+                                                                       0.000000
+SYS_TOP         SI[0]              port      driving_cell_max_fall_itrans_rise
+                                                                       0.000000
+SYS_TOP         SI[0]              port      driving_cell_multiplier   1.000000
+SYS_TOP         SI[0]              port      driving_cell_dont_scale   false
+SYS_TOP         SI[0]              port      driving_cell_no_drc       false
+SYS_TOP         SI[0]              port      driving_cell_pin_fall     Y
+SYS_TOP         SI[0]              port      driving_cell_library_fall scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+SYS_TOP         SI[0]              port      driving_cell_fall         BUFX2M
+SYS_TOP         SI[1]              port      set_dft_signal            2
+SYS_TOP         SI[1]              port      driving_cell_max_rise_itrans_fall
+                                                                       0.000000
+SYS_TOP         SI[1]              port      driving_cell_max_rise_itrans_rise
+                                                                       0.000000
+SYS_TOP         SI[1]              port      driving_cell_pin_rise     Y
+SYS_TOP         SI[1]              port      driving_cell_library_rise scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+SYS_TOP         SI[1]              port      driving_cell_rise         BUFX2M
+SYS_TOP         SI[1]              port      driving_cell_max_fall_itrans_fall
+                                                                       0.000000
+SYS_TOP         SI[1]              port      driving_cell_max_fall_itrans_rise
+                                                                       0.000000
+SYS_TOP         SI[1]              port      driving_cell_multiplier   1.000000
+SYS_TOP         SI[1]              port      driving_cell_dont_scale   false
+SYS_TOP         SI[1]              port      driving_cell_no_drc       false
+SYS_TOP         SI[1]              port      driving_cell_pin_fall     Y
+SYS_TOP         SI[1]              port      driving_cell_library_fall scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+SYS_TOP         SI[1]              port      driving_cell_fall         BUFX2M
+SYS_TOP         SI[2]              port      set_dft_signal            2
+SYS_TOP         SI[2]              port      driving_cell_max_rise_itrans_fall
+                                                                       0.000000
+SYS_TOP         SI[2]              port      driving_cell_max_rise_itrans_rise
+                                                                       0.000000
+SYS_TOP         SI[2]              port      driving_cell_pin_rise     Y
+SYS_TOP         SI[2]              port      driving_cell_library_rise scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+SYS_TOP         SI[2]              port      driving_cell_rise         BUFX2M
+SYS_TOP         SI[2]              port      driving_cell_max_fall_itrans_fall
+                                                                       0.000000
+SYS_TOP         SI[2]              port      driving_cell_max_fall_itrans_rise
+                                                                       0.000000
+SYS_TOP         SI[2]              port      driving_cell_multiplier   1.000000
+SYS_TOP         SI[2]              port      driving_cell_dont_scale   false
+SYS_TOP         SI[2]              port      driving_cell_no_drc       false
+SYS_TOP         SI[2]              port      driving_cell_pin_fall     Y
+SYS_TOP         SI[2]              port      driving_cell_library_fall scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+SYS_TOP         SI[2]              port      driving_cell_fall         BUFX2M
+SYS_TOP         SI[3]              port      set_dft_signal            2
+SYS_TOP         SI[3]              port      driving_cell_max_rise_itrans_fall
+                                                                       0.000000
+SYS_TOP         SI[3]              port      driving_cell_max_rise_itrans_rise
+                                                                       0.000000
+SYS_TOP         SI[3]              port      driving_cell_pin_rise     Y
+SYS_TOP         SI[3]              port      driving_cell_library_rise scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+SYS_TOP         SI[3]              port      driving_cell_rise         BUFX2M
+SYS_TOP         SI[3]              port      driving_cell_max_fall_itrans_fall
+                                                                       0.000000
+SYS_TOP         SI[3]              port      driving_cell_max_fall_itrans_rise
+                                                                       0.000000
+SYS_TOP         SI[3]              port      driving_cell_multiplier   1.000000
+SYS_TOP         SI[3]              port      driving_cell_dont_scale   false
+SYS_TOP         SI[3]              port      driving_cell_no_drc       false
+SYS_TOP         SI[3]              port      driving_cell_pin_fall     Y
+SYS_TOP         SI[3]              port      driving_cell_library_fall scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+SYS_TOP         SI[3]              port      driving_cell_fall         BUFX2M
+SYS_TOP         SI[4]              port      set_dft_signal            2
+SYS_TOP         SI[4]              port      driving_cell_max_rise_itrans_fall
+                                                                       0.000000
+SYS_TOP         SI[4]              port      driving_cell_max_rise_itrans_rise
+                                                                       0.000000
+SYS_TOP         SI[4]              port      driving_cell_pin_rise     Y
+SYS_TOP         SI[4]              port      driving_cell_library_rise scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+SYS_TOP         SI[4]              port      driving_cell_rise         BUFX2M
+SYS_TOP         SI[4]              port      driving_cell_max_fall_itrans_fall
+                                                                       0.000000
+SYS_TOP         SI[4]              port      driving_cell_max_fall_itrans_rise
+                                                                       0.000000
+SYS_TOP         SI[4]              port      driving_cell_multiplier   1.000000
+SYS_TOP         SI[4]              port      driving_cell_dont_scale   false
+SYS_TOP         SI[4]              port      driving_cell_no_drc       false
+SYS_TOP         SI[4]              port      driving_cell_pin_fall     Y
+SYS_TOP         SI[4]              port      driving_cell_library_fall scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+SYS_TOP         SI[4]              port      driving_cell_fall         BUFX2M
+SYS_TOP         SO                 port      set_dft_signal            2
+SYS_TOP         SO                 port      load                      0.500000
+SYS_TOP         TX_OUT             port      load                      0.100000
+SYS_TOP         UART_CLK           port      pin_on_clock_network_per_scn
+                                                                       true
+SYS_TOP         scan_clk           port      pin_on_clock_network_per_scn
+                                                                       true
+SYS_TOP         scan_clk           port      set_dft_signal            2
+SYS_TOP         scan_rst           port      set_dft_signal            2
+SYS_TOP         test_mode          port      set_dft_signal            2
+SYS_TOP         test_mode          port      user_case_value           1
+SYS_TOP         test_mode          port      driving_cell_max_rise_itrans_fall
+                                                                       0.000000
+SYS_TOP         test_mode          port      driving_cell_max_rise_itrans_rise
+                                                                       0.000000
+SYS_TOP         test_mode          port      driving_cell_pin_rise     Y
+SYS_TOP         test_mode          port      driving_cell_library_rise scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+SYS_TOP         test_mode          port      driving_cell_rise         BUFX2M
+SYS_TOP         test_mode          port      driving_cell_max_fall_itrans_fall
+                                                                       0.000000
+SYS_TOP         test_mode          port      driving_cell_max_fall_itrans_rise
+                                                                       0.000000
+SYS_TOP         test_mode          port      driving_cell_multiplier   1.000000
+SYS_TOP         test_mode          port      driving_cell_dont_scale   false
+SYS_TOP         test_mode          port      driving_cell_no_drc       false
+SYS_TOP         test_mode          port      driving_cell_pin_fall     Y
+SYS_TOP         test_mode          port      driving_cell_library_fall scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+SYS_TOP         test_mode          port      driving_cell_fall         BUFX2M
+SYS_TOP         test_so2           port      is_test_circuitry         true
+SYS_TOP         test_so2           port      created_by_test_compiler  true
+SYS_TOP         test_so3           port      is_test_circuitry         true
+SYS_TOP         test_so3           port      created_by_test_compiler  true
+SYS_TOP         test_so4           port      is_test_circuitry         true
+SYS_TOP         test_so4           port      created_by_test_compiler  true
+SYS_TOP         test_so5           port      is_test_circuitry         true
+SYS_TOP         test_so5           port      created_by_test_compiler  true
+
+1

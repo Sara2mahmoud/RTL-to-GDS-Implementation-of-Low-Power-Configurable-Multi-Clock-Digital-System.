@@ -1,0 +1,18 @@
+# Load the necessary libraries and design units
+vlib work
+vmap work work
+
+# Compile the source files
+vlog -f sourcefile.txt
+# Load the testbench module
+vsim -gui work.SYS_TB
+
+add wave -position insertpoint sim:/SYS_TB/DUT/*
+add wave -position insertpoint sim:/SYS_TB/DUT/RegFile_U0/*
+add wave -position insertpoint sim:/SYS_TB/DUT/ALU_U0/*
+add wave -position insertpoint sim:/SYS_TB/DUT/sys_ctrl_U0/*
+
+
+
+# Run the simulation
+run -all
