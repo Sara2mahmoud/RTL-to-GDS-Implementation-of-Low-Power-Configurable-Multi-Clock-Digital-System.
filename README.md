@@ -75,18 +75,10 @@ This will compile and simulate the RTL design with waveform viewing enabled.
 
 ---
 
-## 📚 Documentation
+## 🧑‍💻 Author
 
-- Additional descriptions and detailed component explanations are available in the `DOCs/` directory.
+- Sara Mahmoud — [@Sara2mahmoud](https://github.com/Sara2mahmoud)
 
----
+## 📜 License
 
-## 📄 LICENSE
-
-_(Specify license here, e.g., MIT, Apache 2.0, etc.)_
-
----
-
-## 🙏 Acknowledgements
-
-Thanks to all contributors and support resources used throughout this RTL-to-GDSII implementation process.
+For academic and non-commercial use only.
