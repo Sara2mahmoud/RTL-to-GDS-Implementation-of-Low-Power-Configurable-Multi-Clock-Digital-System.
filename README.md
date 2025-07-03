@@ -42,12 +42,11 @@ Contains simulation testbenches written in Verilog to verify:
 ## 🗄️ Backend (`Backend/`)
 
 ASIC implementation files including:
-- **synthesis/** – Synthesis TCL scripts
-- **DFT/** – DFT (Scan insertion) files
-- **formality/** – Setup for RTL vs Gate-Level formal verification
-- **post_dft_formality/** – Gate-level vs RTL verification post-synthesis.
-- **post_synthesis_formality/** – Formality verification after DFT insertion.
-- **pnr/** – Physical implementation (Place and Route), including floorplanning, placement, CTS, routing, and GDSII generation
+- **synthesis scripts & reporst /** – Synthesis TCL scripts and reports
+- **DFT scripts & reports/** – DFT (Scan insertion) files
+- **post dft formality/** – Gate-level vs RTL verification post-synthesis.
+- **post synthesis formality/** – Formality verification after DFT insertion.
+- **PNR/** – Physical implementation (Place and Route), including floorplanning, placement, CTS, routing, and GDSII generation
 ---
 
 ## 🖼️ System Diagram
